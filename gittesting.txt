@@ -17,3 +17,55 @@ jcl error will be at bottom
 
 once errors fixed 
 SDSF screen put "?" beside it not "s" 
+
+
+
+how to upload to git
+
+C:\wamp64\www\todolistgit>cd C:\Users\Sean\Desktop\gittest
+
+C:\Users\Sean\Desktop\gittest>git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+C:\Users\Sean\Desktop\gittest>git init
+Initialized empty Git repository in C:/Users/Sean/Desktop/gittest/.git/
+
+C:\Users\Sean\Desktop\gittest>git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        gittesting.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Sean\Desktop\gittest>git add .
+
+C:\Users\Sean\Desktop\gittest>git commit
+
+
+key " i " ->enter commit message
+
+key " esc" -> to get into bottom command input bar
+
+
+" :wq " key " enter "
+
+C:\Users\Sean\Desktop\gittest>git commit
+[master (root-commit) 792482e] first commit
+ 1 file changed, 19 insertions(+)
+ create mode 100644 gittesting.txt
+
+C:\Users\Sean\Desktop\gittest>
+
+C:\Users\Sean\Desktop\gittest>git remote add orgin https://github.com/SeanTuc/todolistgit.git
+
+C:\Users\Sean\Desktop\gittest>git remote add githelp https://github.com/SeanTuc/todolistgit.git
+
+C:\Users\Sean\Desktop\gittest>git push --set-upstream githelp master
+
+
+
