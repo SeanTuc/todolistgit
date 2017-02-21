@@ -68,4 +68,149 @@ C:\Users\Sean\Desktop\gittest>git remote add githelp https://github.com/SeanTuc/
 C:\Users\Sean\Desktop\gittest>git push --set-upstream githelp master
 
 
+--------------------------- push to git -------------------------------------------------
+C:\Users\Sean>cd C:\wamp64\www\todolistgit
+
+C:\wamp64\www\todolistgit>git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .idea/vcs.xml
+        new file:   .idea/webServers.xml
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+        modified:   todolist (modified content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/deployment.xml
+        .idea/modules.xml
+        .idea/todolistgit.iml
+        .idea/workspace.xml
+
+
+C:\wamp64\www\todolistgit>cd C:\Users\Sean\Desktop\gittest
+
+C:\Users\Sean\Desktop\gittest>git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+C:\Users\Sean\Desktop\gittest>git init
+Initialized empty Git repository in C:/Users/Sean/Desktop/gittest/.git/
+
+C:\Users\Sean\Desktop\gittest>git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+Did you mean this?
+        status
+
+C:\Users\Sean\Desktop\gittest>git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        gittesting.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Sean\Desktop\gittest>git add .
+
+C:\Users\Sean\Desktop\gittest>git commit
+[master (root-commit) 792482e] first commit
+ 1 file changed, 19 insertions(+)
+ create mode 100644 gittesting.txt
+
+C:\Users\Sean\Desktop\gittest>git push master orgin
+error: src refspec orgin does not match any.
+error: failed to push some refs to 'master'
+
+C:\Users\Sean\Desktop\gittest>git remote add orgin https://github.com/SeanTuc/todolistgit.git
+
+C:\Users\Sean\Desktop\gittest>git push master
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream master master
+
+
+C:\Users\Sean\Desktop\gittest>git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+C:\Users\Sean\Desktop\gittest>git remote add githelp https://github.com/SeanTuc/todolistgit.git
+
+C:\Users\Sean\Desktop\gittest>git push githelp
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream githelp master
+
+
+C:\Users\Sean\Desktop\gittest>git push --set-upstream githelp master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 387 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/SeanTuc/todolistgit.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from githelp.
+
+C:\Users\Sean\Desktop\gittest>git status
+On branch master
+Your branch is up-to-date with 'githelp/master'.
+nothing to commit, working tree clean
+
+C:\Users\Sean\Desktop\gittest>git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+Did you mean this?
+        status
+
+C:\Users\Sean\Desktop\gittest>git status
+On branch master
+Your branch is up-to-date with 'githelp/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   gittesting.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Sean\Desktop\gittest>git add .
+
+C:\Users\Sean\Desktop\gittest>git commit
+[master 7916578] :)
+ 1 file changed, 53 insertions(+), 1 deletion(-)
+
+C:\Users\Sean\Desktop\gittest>git push githelp
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 878 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/SeanTuc/todolistgit.git
+   792482e..7916578  master -> master
+
+C:\Users\Sean\Desktop\gittest>
+
+
 
