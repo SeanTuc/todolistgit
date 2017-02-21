@@ -1,0 +1,19 @@
+todo -- java script
+
+
+
+
+
+TEst mainframe
+fix jcl errors
+ 	command: submit
+if MacCC = 0000 no error
+
+look at log
+	command:sdsf
+	staus
+	command: owner userid
+jcl error will be at bottom
+
+once errors fixed 
+SDSF screen put "?" beside it not "s" 
